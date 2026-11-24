@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de aprendices</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Ejercicio 1: </a>
+        <a href="ejercicio2.html">Ejercicio 2:</a>
+    </nav>
+
+    <h1>Registro de aprendices</h1>
+
+    <form id="formulario">
+
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre">
+
+        <br><br>
+
+        <label>Correo electrónico:</label>
+        <input type="email" name="correo">
+
+        <br><br>
+
+        <label>Documento:</label>
+        <input type="number" name="documento">
+
+        <br><br>
+
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono">
+
+        <br><br>
+
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha">
+
+        <br><br>
+
+        <label>Programa de formación:</label>
+
+        <select name="programa">
+            <option value="">Seleccione</option>
+            <option value="ADSO">ADSO</option>
+            <option value="Multimedia">Multimedia</option>
+            <option value="Redes">Redes</option>
+        </select>
+
+        <br><br>
+
+        <label>Jornada:</label>
+
+        <input type="radio" name="jornada" value="Diurna">
+        Diurna
+
+        <input type="radio" name="jornada" value="Nocturna">
+        Nocturna
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="acepta">
+            Acepto el tratamiento de datos
+        </label>
+
+        <br><br>
+
+        <button type="submit">Registrar</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Información registrada</h2>
+
+    <div id="resultado"></div>
+
+    <script src="JS/app.js"></script>
+
+</body>
+</html>
